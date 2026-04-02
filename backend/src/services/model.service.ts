@@ -5,19 +5,19 @@ import { ChatMistralAI } from "@langchain/mistralai"
 
 
 
-const Gemini_model = new ChatGoogle({
+export const Gemini_model = new ChatGoogle({
     model: "gemini-flash-latest",
     apiKey: config.GEMINI_API_KEY
 });
 
 
-const Mistral_model = new ChatMistralAI({
+export const Mistral_model = new ChatMistralAI({
     model: "mistral-medium-latest",
     apiKey: config.MISTRAL_API_KEY
 })
 
 
-const Cohere_model = new ChatCohere({
+export const Cohere_model = new ChatCohere({
     model: "command-a-03-2025",
    apiKey: config.COHERE_API_KEY
  
