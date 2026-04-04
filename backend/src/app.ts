@@ -1,5 +1,6 @@
 import express from 'express';
-import useGraph from "./services/graph.ai.service.js"
+// import useGraph from "./services/graph.ai.service.js"
+import Callgraph from "../src/services/graph.ai.service.js"
 
 const app = express();
 
@@ -8,7 +9,7 @@ app.get('/health', (req, res) => {
 });
 
 app.post("/use-graph",async (req,res)=>{
-        await useGraph("what is the captial of france ?").then((result)=>{
+        await Callgraph("what is L3 cache ?").then((result)=>{
                     
               res.status(200).json({ result });
         })

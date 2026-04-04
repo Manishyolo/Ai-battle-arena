@@ -1,7 +1,7 @@
 import config from "../config/config.js"
 import { ChatCohere } from "@langchain/cohere"
 import { ChatMistralAI } from "@langchain/mistralai"
-
+import { ChatGoogle } from "@langchain/google";
 
 
 

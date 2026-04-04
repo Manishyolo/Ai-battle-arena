@@ -1,5 +1,6 @@
-import {config} from 'dotenv';
-config();
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 type Config = {
    readonly  GEMINI_API_KEY : string;
